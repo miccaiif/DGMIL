@@ -2,7 +2,8 @@
 
 On Updating.
 
-Official PyTorch implementation of our MICCAI 2022 paper: DGMIL: Distribution Guided Multiple Instance Learning for Whole Slide Image Classification.
+This is a PyTorch/GPU implementation of our MICCAI 2022 paper [DGMIL: Distribution Guided Multiple Instance Learning for Whole Slide Image Classification](https://link.springer.com/chapter/10.1007/978-3-031-16434-7_3#copyright-information).
+
 
 ### Citation
 If this work is helpful to you, please cite it as:
