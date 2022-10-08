@@ -4,6 +4,10 @@ This is a PyTorch/GPU implementation of our MICCAI 2022 paper [DGMIL: Distributi
 
 Main models are uploaded and the original MAE features and distance files are on updating...
 
+<p align="center">
+  <img src="https://github.com/miccaiif/DGMIL/blob/main/figure1.pdf" width="640">
+</p>
+
 ### Citation
 If this work is helpful to you, please cite it as:
 ```
