@@ -1,9 +1,8 @@
 # :mushroom: DGMIL
 
-On Updating.
-
 This is a PyTorch/GPU implementation of our MICCAI 2022 paper [DGMIL: Distribution Guided Multiple Instance Learning for Whole Slide Image Classification](https://link.springer.com/chapter/10.1007/978-3-031-16434-7_3#copyright-information).
 
+Main models are uploaded and the original MAE features and distance files are on updating...
 
 ### Citation
 If this work is helpful to you, please cite it as:
@@ -23,3 +22,6 @@ pages="24--34",
 isbn="978-3-031-16434-7"
 }
 ```
+
+### Contact Information
+If you have any question, please email to me [lhqu20@fudan.edu.cn](lhqu20@fudan.edu.cn).
