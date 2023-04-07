@@ -12,7 +12,7 @@ Main models and training frameworks are uploaded. For patch generating, please f
 
 * The different result with [DSMIL](https://github.com/binli123/dsmil-wsi)
 
-Compared with DSMIL, for considerations of computational efficiency and resources, we used 5x (vs. DSMIL 20x) in our experiments. We used a patch size of 512 (vs DSMIL 224), and a patch is labeled as positive if it contains 25% or more cancer areas (not specified in DSMIL, please refer to its code). These different settings may result in the difference between the metrics reported by us and those reported by DSMIL.
+  Compared with DSMIL, for considerations of computational efficiency and resources, we used 5x (vs. DSMIL 20x) in our experiments. We used a patch size of 512 (vs DSMIL 224), and a patch is labeled as positive if it contains 25% or more cancer areas (not specified in DSMIL, please refer to its code). These different settings may result in the difference between the metrics reported by us and those reported by DSMIL.
 
 ### Citation
 If this work is helpful to you, please cite it as:
