@@ -203,7 +203,7 @@ def normalization(data):
     return (data - np.min(data)) / _range
 
 #### OOD detection ####
-def get_roc_sklearn(xin, xood): #构造的数据集进行检测
+def get_roc_sklearn(xin, xood): 
     labels = [0] * len(xin) + [1] * len(xood)
     data = np.concatenate((xin, xood))
     # data=softmax(normalization(data))
