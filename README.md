@@ -8,7 +8,7 @@ Main models and training frameworks are uploaded. For patch generating, please f
   <img src="https://github.com/miccaiif/DGMIL/blob/main/figure1.png" width="640">
 </p>
 
-### Description of Files
+### Description of Key Inputs
 
 #### MAE_dynamic_trainingneg_feats.npy
 - Array of dimensions n*512, where n represents the features of negative instances within the training set.
