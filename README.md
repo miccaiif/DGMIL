@@ -8,6 +8,37 @@ Main models and training frameworks are uploaded. For patch generating, please f
   <img src="https://github.com/miccaiif/DGMIL/blob/main/figure1.png" width="640">
 </p>
 
+### Description of Files
+
+#### MAE_dynamic_trainingneg_feats.npy
+- Array of dimensions n*512, where n represents the features of negative instances within the training set.
+- 512 is the dimensionality of features extracted by MAE.
+
+#### MAE_dynamic_trainingpos_feats.npy
+- Features of positive instances within the training set.
+- Due to the absence of instance labels, positive instances here refer to all instances from positive slides.
+
+#### MAE_testing_neg_feats.npy & MAE_testing_pos_feats.npy
+- Features of all negative and positive instances with true instance labels within the testing set, respectively.
+- These are used for testing and metric calculation. Both are in the format of n*512.
+
+#### test_slide_label.npy & num_bag_list_index.npy
+- Used for slide-level prediction.
+- Implementation needs improvement. Currently, instances need to be assembled into a bag feature based on num_bag_list_index.
+- Alternatively, any method of reading features on a Slide basis can be considered. A better attempt can be referenced from [here](https://github.com/miccaiif/WENO/tree/main/Datasets_loader).
+
+#### MAE_dynamic_trainingneg_dis.npy & MAE_dynamic_trainingpos_dis.npy
+- Initialization of the first unsupervised distance calculation in the dynamic dgmil algorithm.
+- Generated from the original features using the "get_score_and_dis_feats" function, as the first iteration requires initialization.
+
+### Overview of DGMIL
+- DGMIL is an instance-based Multiple Instance Learning (MIL) paradigm.
+- It trains at the instance level and during testing, obtains predictions for each instance, followed by aggregation methods like mean-pooling or max-pooling to derive bag predictions.
+
+### Additional Tips
+- The quality of the original feature space significantly impacts DGMIL, likely due to distance measurement and clustering algorithms.
+- Through extensive experimentation, it's found that MAE features might be more favorable for DGMIL compared to Simclr and ImageNet pretrained features.
+
 ### Frequently Asked Questions.
 
 * Regarding the different result with [DSMIL](https://github.com/binli123/dsmil-wsi).
